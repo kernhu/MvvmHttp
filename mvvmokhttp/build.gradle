@@ -50,18 +50,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     /** okhttp + retrofit + rxjava */
-    implementation rootProject.ext.dependencies.okhttp3
-    implementation rootProject.ext.dependencies.okhttp3LoggingInterceptor
-    implementation rootProject.ext.dependencies.retrofit2
-    implementation rootProject.ext.dependencies.retrofit2ConverterGson
-    implementation rootProject.ext.dependencies.retrofit2AdapterRxjava3
-    implementation rootProject.ext.dependencies.rxjava3
-    implementation rootProject.ext.dependencies.rxandroid3
-    implementation rootProject.ext.dependencies.rxlifecycle4
-    implementation rootProject.ext.dependencies.rxlifecycle4Components
-    implementation rootProject.ext.dependencies.lifecycleExtensions
-    implementation rootProject.ext.dependencies.rxbinding4
-    implementation rootProject.ext.dependencies.gson
-    implementation rootProject.ext.dependencies.mmkv
+    api rootProject.ext.dependencies.okhttp3
+    api rootProject.ext.dependencies.okhttp3LoggingInterceptor
+    api rootProject.ext.dependencies.retrofit2
+    api rootProject.ext.dependencies.retrofit2ConverterGson
+    api rootProject.ext.dependencies.retrofit2AdapterRxjava3
+    api rootProject.ext.dependencies.rxjava3
+    api rootProject.ext.dependencies.rxandroid3
+    api rootProject.ext.dependencies.rxlifecycle4
+    api rootProject.ext.dependencies.rxlifecycle4Components
+    api rootProject.ext.dependencies.lifecycleExtensions
+    api rootProject.ext.dependencies.rxbinding4
+    api rootProject.ext.dependencies.gson
+    api rootProject.ext.dependencies.mmkv
 
 }
