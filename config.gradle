@@ -1,0 +1,87 @@
+ext {
+    android = [
+            buildToolsVersion: "32.0.0",
+            compileSdkVersion: 32,
+            minSdkVersion    : 21,
+            targetSdkVersion : 32,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    url = [
+            //第一梯队url
+            uatFirstly   : '"http://172.30.61.121:8080/"',
+            prodFirstly  : '"http://172.30.61.121:8080/"',
+            devFirstly   : '"http://172.30.61.121:8080/"',
+
+            //第二梯队url 需要单引号和双引号包裹，uat 测试环境；prod 生成环境； dev开发环境
+            uatSecondary : '"{值}"',
+            prodSecondary: '"{值}"',
+            devSecondary : '"{值}"',
+
+            //第三梯队url 需要单引号和双引号包裹，uat 测试环境；prod 生成环境； dev开发环境
+            uatThirdly   : '"{值}"',
+            prodThirdly  : '"{值}"',
+            devThirdly   : '"{值}"',
+    ]
+
+    appCode = [
+            //主接口的 AppCode
+            uatFirstly   : '"3000029 WxHDwbziD="',
+            prodFirstly  : '"3000029 WxXXwbziD="',
+            devFirstly   : '"3000029 WxHDwbziD="',
+
+            uatSecondary : '"{值}"',
+            prodSecondary: '"{值}"',
+            devSecondary : '"{值}"',
+
+            uatThirdly   : '"{值}"',
+            prodThirdly  : '"{值}"',
+            devThirdly   : '"{值}"',
+    ]
+
+    versions = [
+
+            /*************************************/
+            okhttp3                  : "4.9.3",
+            okhttp3LoggingInterceptor: "4.9.3",
+            retrofit2                : "2.9.0",
+            retrofit2ConverterGson   : "2.9.0",
+            retrofit2AdapterRxjava3  : "2.9.0",
+            rxjava3                  : "3.1.4",
+            rxandroid3               : "3.0.0",
+            rxlifecycle4             : "4.0.2",
+            rxlifecycle4Components   : "4.0.2",
+            lifecycleExtensions      : "2.2.0-rc01",
+            rxbinding4               : "4.0.0",
+            /*************************************/
+            gson                     : "2.9.0",
+
+            mmkv                     : "1.2.12"
+    ]
+
+
+    dependencies = [
+
+            /******************************************************************************************************************/
+            okhttp3                  : "com.squareup.okhttp3:okhttp:${versions.okhttp3}",
+            okhttp3LoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${versions.okhttp3LoggingInterceptor}",
+
+            retrofit2                : "com.squareup.retrofit2:retrofit:${versions.retrofit2}",
+            retrofit2ConverterGson   : "com.squareup.retrofit2:converter-gson:${versions.retrofit2ConverterGson}",
+            retrofit2AdapterRxjava3  : "com.squareup.retrofit2:adapter-rxjava3:${versions.retrofit2AdapterRxjava3}",
+
+            rxjava3                  : "io.reactivex.rxjava3:rxjava:${versions.rxjava3}",
+            rxandroid3               : "io.reactivex.rxjava3:rxandroid:${versions.rxandroid3}",
+
+            rxlifecycle4             : "com.trello.rxlifecycle4:rxlifecycle:${versions.rxlifecycle4}",
+            rxlifecycle4Components   : "com.trello.rxlifecycle4:rxlifecycle-components:${versions.rxlifecycle4Components}",
+            lifecycleExtensions      : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycleExtensions}",
+
+            rxbinding4               : "com.jakewharton.rxbinding4:rxbinding:${versions.rxbinding4}",
+            /******************************************************************************************************************/
+            gson                     : "com.google.code.gson:gson:${versions.gson}",
+            mmkv                     : "com.tencent:mmkv:${versions.mmkv}"
+
+    ]
+}
